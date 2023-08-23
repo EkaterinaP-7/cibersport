@@ -1,0 +1,203 @@
+.h {height:100vh}
+.h2 {height:200vh}
+nav {
+    border-bottom: solid #A974FF 1px ;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: #A974FF;
+}
+nav img {
+    max-height: 4rem;
+}
+
+nav > div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+nav > div > * {
+    margin-right: 2rem;
+}
+nav > div > div:last-child {margin-right: 0;}
+
+
+#baner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+    margin: 8rem 0;
+}
+#baner section {
+    max-width: 30%;
+}
+
+
+#parallax_1 {
+    position: relative;
+    margin-top: 10vh;
+}
+#parallax_1 #j {
+    background-image: url(../imgs/j.png);
+    width: 410px;
+    height: 353px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: -218px;
+}
+#parallax_1 #jl1 {
+    background-image: url(../imgs/jl1.png);
+    width: 248px;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: -80px;
+    top: 0px;
+}
+#parallax_1 #jl2 {
+    background-image: url(../imgs/jl2.png);
+    width: 208px;
+    height: 362px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: -144px;
+    top: -81px;
+}
+
+#impotantINFO {
+    margin-top: 5vh;
+}
+#impotantINFO > div {
+    height: 63px;
+    width: 332px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+#iI1 {
+    background-image: url(../imgs/brash1.png);
+}
+#iI1::after {
+    content: ' .';
+    color: #241D2E00;
+    display: block;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: -20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imgs/circle.png);
+}
+#iI2 {
+    background-image: url(../imgs/brash2.png);
+}
+#iI2::after {
+    content: ' .';
+    color: #241D2E00;
+    display: block;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: -20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imgs/rectangle.png);
+}
+#iI3 {
+    background-image: url(../imgs/brash3.png);
+}
+#iI3::after {
+    content: ' .';
+    color: #241D2E00;
+    display: block;
+    height: 96px;
+    width: 108px;
+    position: relative;
+    left: 255px;
+    top: -19px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imgs/a.png);
+}
+#iI4 {
+    background-image: url(../imgs/brash4.png);
+}
+#iI4::after {
+    content: ' .';
+    color: #241D2E00;
+    display: block;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: -20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imgs/x.png);
+}
+
+.bg-dark {
+    background-color: #241D2E !important;
+}
+
+.bg-bark-gradient{
+    background: linear-gradient(0deg, #241D2E, #241D2E, #09040f);;
+}
+
+#registration {
+    padding: 15rem 0;
+}
+#registration > div {
+    margin: auto;
+}
+
+
+/*форма  , 1px 2px 0px 0px yellow */
+
+#registration form input {
+    border: solid #a974ff 1px;
+    background: #a974ff29;
+    border-radius: 30px;
+    color: #a974ff;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    min-width: 25vw;
+    outline: none;
+}
+
+
+#registration form input:focus {
+    /* border-image: linear-gradient(to bottom right, #7d36e1, #25efdf);
+    border-image-slice: 1; */
+
+    box-shadow: -1px 1px 0 0px rgba(65, 190, 255, 0.8), 2px 1px 0px 2px rgba(160, 55, 242, 0.8);
+    border: none;
+}
+
+
+#registration form label {
+    color: #a974ff;
+    font-size: 1rem;
+    margin-bottom: .75rem;
+    margin-left: 1rem;
+    font-weight: 100;
+}
+
+#about > div:first-child {
+    position: relative;
+}
+
+#about > div {
+    margin: auto;
+    color: white;
+}
+
+#about article {
+    font-size: 1rem;
+    font-weight: 100;
+}
