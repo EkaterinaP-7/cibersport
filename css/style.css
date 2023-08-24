@@ -1,36 +1,87 @@
+/* @font-face {
+	font-family: 'Montserrat-Regular'; 
+	src: url('./fonts/Montserrat-Regular.ttf')  format('ttf'),; 
+}
+ 
+@font-face {
+	font-family: 'Montserrat bold'; 
+	src: url(./fonts/Montserrat-Bold.ttf)  format('ttf'),; 
+}
+*/
+body {
+    font-family: 'Montserrat';
+} 
+
+
 .h {height:100vh}
 .h2 {height:200vh}
 nav {
-    border-bottom: solid #A974FF 1px ;
+    /* border-bottom: solid #A974FF 1px ; */
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
-    color: #A974FF;
+    padding-top: 4rem;
+    color: white;
+    /* color: #A974FF; */
 }
 nav img {
-    max-height: 4rem;
+    max-height: 3.5rem;
+    margin-right: 2rem;
 }
 
 nav > div {
     display: flex;
     justify-content: end;
     align-items: center;
+    border-bottom: solid #A974FF 1px ;
+    position: relative;
+
 }
 nav > div > * {
     margin-right: 2rem;
+    margin-bottom: 2rem;
 }
-nav > div > div:last-child {margin-right: 0;}
+nav > div > div:last-child {
+    margin-right: 0;
+}
 
+nav > div > div:last-child div {
+    z-index: 2; 
+    position: relative;
+}
+nav > div > div:last-child::before {
+    content: '1';
+    color: transparent;
+    position: absolute;
+    width: 261px;
+    height: 52px;
+    background-image: url(../imgs/brash2.png);
+    background-size: cover;
+    right: -114px;
+    top: -16px;
+}
 
+h1 {font-size: 2rem;}
+h3 {font-size: 1.25rem;}
 #baner {
     display: flex;
     justify-content: space-between;
     position: relative;
     color: white;
-    margin: 8rem 0;
+    margin: 5rem 0;
 }
 #baner section {
-    max-width: 30%;
+    max-width: 37%;
+}
+
+#baner h1 {
+    display: block;
+    width: 200%;
+    font-weight: 600;
+}
+#baner h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
 }
 
 
@@ -40,8 +91,8 @@ nav > div > div:last-child {margin-right: 0;}
 }
 #parallax_1 #j {
     background-image: url(../imgs/j.png);
-    width: 410px;
-    height: 353px;
+    width: 425px;
+    height: 367px;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -49,27 +100,27 @@ nav > div > div:last-child {margin-right: 0;}
 }
 #parallax_1 #jl1 {
     background-image: url(../imgs/jl1.png);
-    width: 248px;
-    height: 380px;
+    width: 194px;
+    height: 347px;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    right: -80px;
-    top: 0px;
+    right: -93px;
+    top: -61px;
 }
 #parallax_1 #jl2 {
     background-image: url(../imgs/jl2.png);
-    width: 208px;
-    height: 362px;
+    width: 322px;
+    height: 394px;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     right: -144px;
-    top: -81px;
+    top: 3px;
 }
 
 #impotantINFO {
-    margin-top: 5vh;
+    margin-top: 6rem;
 }
 #impotantINFO > div {
     height: 63px;
@@ -77,8 +128,17 @@ nav > div > div:last-child {margin-right: 0;}
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 1rem;
+    position: relative;
+}
+#impotantINFO > div > div {
+    position: absolute;
+    top: 1.5rem;
+    left: 3rem;
 }
 
+#impotantINFO > div::after {
+    top: -5px;
+}
 #iI1 {
     background-image: url(../imgs/brash1.png);
 }
@@ -120,7 +180,7 @@ nav > div > div:last-child {margin-right: 0;}
     width: 108px;
     position: relative;
     left: 255px;
-    top: -19px;
+    top: -19px !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../imgs/a.png);
@@ -200,4 +260,34 @@ nav > div > div:last-child {margin-right: 0;}
 #about article {
     font-size: 1rem;
     font-weight: 100;
+}
+
+
+
+#priority{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12rem;
+}
+#priority > div {
+    width: fit-content;
+    max-width: 23%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+#priority > div > img {
+    max-height: 71px;
+    width: fit-content;
+}
+
+#priority > div > div {
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    top: -25px;
+}
+#priority > div > div:last-child {
+    font-weight: 200;
 }
