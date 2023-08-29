@@ -8,13 +8,16 @@
 	src: url(./fonts/Montserrat-Bold.ttf)  format('ttf'),; 
 }
 */
-body {
+html {
     font-family: 'Montserrat';
+    scroll-behavior: smooth !important;
 } 
 
 
-.h {height:100vh}
-.h2 {height:200vh}
+.h {
+    height:calc(100vh + 140px);
+}
+/* .h2 {height:300vh} */
 nav {
     /* border-bottom: solid #A974FF 1px ; */
     display: flex;
@@ -71,12 +74,14 @@ h3 {font-size: 1.25rem;}
 }
 #baner section {
     max-width: 37%;
+    position: relative;
 }
 
 #baner h1 {
     display: block;
     width: 200%;
     font-weight: 600;
+    z-index: 3;
 }
 #baner h3 {
     margin-top: 2rem;
@@ -84,6 +89,17 @@ h3 {font-size: 1.25rem;}
     font-weight: 600;
 }
 
+#baner h1::after {
+    content: '1';
+    color: transparent;
+    position: absolute;
+    width: 204px;
+    height: 69px;
+    background-image: url(../imgs/event.png);
+    background-size: cover;
+    top: -35px;
+    left: 170px
+}
 
 #parallax_1 {
     position: relative;
@@ -217,6 +233,179 @@ h3 {font-size: 1.25rem;}
 }
 
 
+/*блок линий*/
+.parallax_lines{
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.lines{
+    /* width: 100%; */
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    /* overflow-x: hidden; */
+}
+.lines1{
+    background: url(../imgs/lines1.png);
+    background-size: cover;
+    background-position: center;
+    width: 3500px;
+    animation: lines1;
+    animation-duration: 18s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    overflow-x: hidden;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+.lines2{
+    background: url(../imgs/lines2.png);
+    background-size: cover;
+    background-position: center;
+    width: 3000px;
+    animation-direction: alternate-reverse;
+    animation: lines2;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    overflow-x: hidden;
+}
+.lines3{
+    background: url(../imgs/lines3.png);
+    background-size: cover;
+    background-position: center;
+    width: 3500px;
+    animation: lines3;
+    animation-duration: 30s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    overflow-x: hidden;
+}
+.lines4{
+    background: url(../imgs/lines4.png);
+    background-size: cover;
+    background-position: center;
+    width: 2900px;
+    animation: lines4;
+    animation-duration: 20s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    overflow-x: hidden;
+}
+
+@keyframes lines1{
+    0%{
+        width: 3500px;
+    } 
+    100%{
+        width: 2000px;
+    }  
+}
+@keyframes lines2{
+    0%{
+        width: 3000px;
+    } 
+    100%{
+        width: 1800px;
+    }  
+}
+@keyframes lines3{
+    0%{
+        width: 3500px;
+    } 
+    100%{
+        width: 2000px;
+    }  
+}
+@keyframes lines4{
+    0%{
+        width: 2900px;
+    } 
+    100%{
+        width: 2000px;
+    }   
+}
+
+
+
+.lines1.scroll1 {
+    animation: lines1;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.lines2.scroll1 {
+    animation: lines2;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.lines3.scroll1 {
+    animation: lines3;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.lines4.scroll1 {
+    animation: lines4;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes lines1{
+    0%{
+        width: 3500px;
+    } 
+    50% {
+        width: 2000px;
+    }
+    100%{
+        width: 3500px;
+    }  
+}
+@keyframes lines2{
+    0%{
+        width: 3000px;
+    } 
+    50% {
+        width: 1800px;
+    }
+    100%{
+        width: 3000px;
+    }  
+}
+@keyframes lines3{
+    0%{
+        width: 3500px;
+    } 
+    50% {
+        width: 2000px;
+    }
+    100%{
+        width: 3500px;
+    }  
+}
+@keyframes lines4{
+    0%{
+        width: 2900px;
+    } 
+    50% {
+        width: 2000px;
+    }
+    100%{
+        width: 2900px;
+    }   
+}
+
+
 /*форма  , 1px 2px 0px 0px yellow */
 
 #registration form input {
@@ -250,11 +439,15 @@ h3 {font-size: 1.25rem;}
 
 #about > div:first-child {
     position: relative;
+    margin-right: 5rem;
 }
 
 #about > div {
     margin: auto;
     color: white;
+    margin-top: 400px;
+    margin-bottom: 100px;
+    position: relative;
 }
 
 #about article {
@@ -262,6 +455,48 @@ h3 {font-size: 1.25rem;}
     font-weight: 100;
 }
 
+#about > div:first-child > div {
+    position: absolute;
+    
+}
+
+#k{
+/* #about > div:first-child > div:first-child{ */
+    height: 343px;
+    width: 534px;
+    background-image: url(../imgs/geometry_about_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 133px;
+    left: -9px;
+}
+#about > div:first-child > div:last-child{
+    height: 99px;
+    width: 306px;
+    background-image: url(../imgs/geometry_about_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: -17px;
+    top: 470px;
+}
+
+#about h2 {
+    margin-bottom: 4rem;
+}
+
+#about h2::before {
+    content: ' .';
+    color: #241D2E00;
+    background-image: url(../imgs/geometry.png);
+    background-size: cover;
+    display: block;
+    height: 97px;
+    width: 122px;
+    position: absolute;
+    top: -30px;
+    left: -142px;
+    
+}
 
 
 #priority{
@@ -290,4 +525,93 @@ h3 {font-size: 1.25rem;}
 }
 #priority > div > div:last-child {
     font-weight: 200;
+}
+
+
+.circle_gradient {
+    padding: 1.5rem 4rem;
+    width: fit-content;
+    border-radius: 50px;
+    box-shadow: 0px 2px 0px 0px rgba(65, 190, 255, 0.8), 4px 0px 0px rgba(160, 55, 242, 0.8);
+    border: none;
+}
+
+.promo-btn {
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+}
+
+#video {height: 100vh;}
+#video iframe {
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-glitch {
+    height: 300px;
+}
+
+
+#dota {
+    height: 100vh;
+    background-image: url(../imgs/dota.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#dota > div {
+    position: relative;
+    height: 100%;
+}
+
+#dota article {
+    padding: 2rem;
+    height: fit-content;
+    width: 80%;
+    border-radius: 50px;
+    box-shadow: -2px 2px 20px 2px rgba(65, 190, 255, 0.8), 5px -4px 20px 2px rgba(160, 55, 242, 0.8);
+    border: none;
+    color: white;
+    background-color: #09040fa1;
+    margin: 375px auto 0 auto;
+}
+
+#cs > div {
+    position: relative;
+    height: 100%;
+}
+#cs {
+    height: 100vh;
+    background-image: url(../imgs/cs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#cs article {
+    padding: 2rem;
+    height: fit-content;
+    width: 80%;
+    border-radius: 50px;
+    box-shadow: -2px 2px 20px 2px rgba(65, 190, 255, 0.8), 5px -4px 20px 2px rgba(160, 55, 242, 0.8);
+    border: none;
+    color: white;
+    background-color: #09040fa1;
+    margin: 635px auto 0 auto;
+}
+
+.reg-cs {
+    right: 0;
+    top: 140px;
+    color: white;
+    background-color: #00000054;
+    position: absolute;
+}
+
+.reg-dota {
+    bottom: 80px;
+    color: white;
+    background-color: #00000054;
 }
