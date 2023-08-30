@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth !important;
 } 
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
 .h {
     height:calc(100vh + 140px);
@@ -50,8 +54,13 @@ nav > div > div:last-child {
 nav > div > div:last-child div {
     z-index: 2; 
     position: relative;
+    
 }
-nav > div > div:last-child::before {
+nav > div > div:last-child div a {
+    color: #a037f2 !important;
+    font-weight: 600;
+}
+/* nav > div > div:last-child::before {
     content: '1';
     color: transparent;
     position: absolute;
@@ -61,7 +70,7 @@ nav > div > div:last-child::before {
     background-size: cover;
     right: -114px;
     top: -16px;
-}
+} */
 
 h1 {font-size: 2rem;}
 h3 {font-size: 1.25rem;}
@@ -551,6 +560,9 @@ h3 {font-size: 1.25rem;}
 .bg-glitch {
     height: 300px;
 }
+.bg-glitch400 {
+    height: 400px;
+}
 
 
 #dota {
@@ -614,4 +626,364 @@ h3 {font-size: 1.25rem;}
     bottom: 80px;
     color: white;
     background-color: #00000054;
+}
+
+#bg-light-gradient{
+    background: linear-gradient(#251E2F, #EEEFFB);
+}
+
+.bg-light{
+    background: #EEEFFB !important;
+
+}
+.partners{
+    padding-top: 15rem;
+}
+.one-sponsor{
+    width: 300px;
+    height: 200px;
+    background: url(../imgs/j.png);
+    background-size: cover;
+    background-position: center;
+    margin: 10px 30px;
+
+}
+
+.partners h1{
+    font-family: 'Montserrat';
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.map{
+    width: 42%;
+    /* padding-right: 20px; */
+    height: 600px;
+} 
+.contacts-block{
+    height: 600px;
+    width: 42%;
+    background: #DEDEEB;
+    border-radius: 80px;
+} 
+.contacts_gradient {
+    /* padding: 1.5rem 4rem; */
+    /* width: fit-content; */
+    border-radius: 80px;
+    box-shadow: 0px 4px 0px 0px #a037f2cc, 4px 0px 0px #41beffcc;
+    /* box-shadow: 4px 4px 0px 0px linear-gradient(#a037f2cc, #41beffcc); */
+    border: none;
+}
+
+#footer{
+    background: #6505FF;
+    width: 100%;
+
+}
+#footer p{
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 0 !important;
+}
+
+
+
+
+/* EVENT */
+#glitch-upper {
+    position: relative;
+    top: -37px;
+}
+
+#event {
+    color: white;
+    padding: 6rem 0;
+}
+
+#event > div > div:first-child {
+    position: relative;
+}
+
+#event h2::before {
+    content: '1';
+    color: transparent;
+    position: absolute;
+    width: 176px;
+    height: 175px;
+    background-image: url(../imgs/jostik.png);
+    background-size: cover;
+    left: -215px;
+    top: -56px;
+}
+#event h2::after {
+    content: '1';
+    color: transparent;
+    position: absolute;
+    width: 111px;
+    height: 79px;
+    background-image: url(../imgs/geometry.png);
+    background-size: cover;
+    right: -168px;
+    top: -5px;
+}
+#event > div > div:last-child {
+    margin: 4rem;
+    width: 100%;
+}
+#event > div > div:last-child > div {
+    margin: 2rem;
+    width: 80%;
+}
+
+#event .photo img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#event .mic {
+    height: 150px;
+    width: 130px;
+    
+    background-image: url(../imgs/microphone.png);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+#event .discription {
+    width:  75%;
+    padding: 1.5rem 4rem;
+    border-radius: 50px;
+    box-shadow: 0px 2px 0px 0px rgba(65, 190, 255, 0.8), 4px 0px 0px rgba(160, 55, 242, 0.8);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+#results {
+    color: white;
+    padding: 6rem 0;
+    position: relative;
+
+    
+}
+
+#results .glitch::before {
+    content: '1';
+    color: transparent;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 95px);
+    background-image: url(../imgs/glitch.png);
+    background-repeat-x: no-repeat;
+    left: 0px;
+    top: 95px;
+}
+
+
+#results > div > div:first-child {
+    position: relative;
+}
+
+#results h2::before {
+    content: '1';
+    color: transparent;
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background-image: url(../imgs/kubok.png);
+    background-size: cover;
+    left: -135px;
+    top: -40px;
+}
+
+
+
+
+#results .table {}
+
+table, table * {
+    background-color: transparent !important;
+    color: white;
+    padding: 1rem 0;
+    z-index: 3;
+}
+
+table {
+    width: auto;
+    padding: 1.5rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0px 2px 0px 0px rgba(65, 190, 255, 0.8), 4px 0px 0px rgba(160, 55, 242, 0.8);
+    border: none;
+    background-color: #241d2ea8 !important;
+    margin-top: 4rem;
+
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+td:not(table tbody tr:last-child td), th {
+    border: none;
+    border-bottom: 1px solid #a037f2;
+}
+
+td, th {
+    padding: 1rem 1rem;
+    text-align: center;  
+}
+
+tr td:not(tr td:first-child) {
+    min-width: 20rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* АДАПТИВНОСТЬ */
+
+@media screen and (max-width: 1200px) {
+    #parallax_1 {
+        display: none;
+    }
+    nav > div {
+        flex-wrap: wrap;
+        border-bottom: none;
+    }
+    nav > div > * {
+        margin-left: 2rem;
+        margin-right: 0;
+        border-bottom: solid #A974FF 1px;
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 990px) {
+    nav > div {display: none;}
+}
+@media screen and (max-width: 767px) {
+    
+    nav img {
+        width: 100%;
+    }
+    #baner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #baner section {
+        max-width: 100%;
+    }
+    #baner h1 {
+        width: 100%;
+    }
+    .h {height: fit-content;}
+    #priority {
+        flex-direction: column;
+        align-items: center;
+    }
+    #priority > div {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    #about > div:first-child {
+        display: none;
+    }
+    #about h2::before {
+        top: -67px;
+        right: 0;
+        left: auto;
+    }
+    #about > div{
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    #video {
+        height: 400px;
+    }
+    #video iframe {
+        height: 400px;
+    }
+    #glitch_mob_none {
+        display: none;
+    }
+    #dota {
+        height: fit-content;
+    }
+    #dota article {
+        width: 95%;
+    }
+    .reg-dota{
+        position: static;
+        margin: 4rem 0;
+    }
+    #dota > div {
+        flex-direction: column;
+        align-items: center ;
+    }
+
+    #cs {
+        height: fit-content;
+    }
+    #cs article {
+        width: 95%;
+    }
+    .reg-cs{
+        position: static;
+        margin: 4rem 0;
+    }
+    #cs > div {
+        flex-direction: column-reverse;
+        align-items: center ;
+    }
+
+    #event h2::before {display: none;}
+    #event h2::after {
+        right: -12px;
+        top: -99px;
+    }
+    #event > div > div:last-child > div{
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    #event .mic {
+        position: absolute;
+        left: -53px;
+        top: 138px;
+    }
+    #event .discription {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #results .glitch::before {
+        display: none;
+    }
+    tr td:not(tr td:first-child) {
+        min-width: auto
+    }
+
 }
