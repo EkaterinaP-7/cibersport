@@ -6,11 +6,12 @@
     <title>Document</title>
 
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
@@ -19,7 +20,7 @@
 </head>
 <body>
     <div  class="bg-dark h" >
-        <div class="container">
+        <div class="container mark-to-scroll">
             <nav>
                 <img src="./imgs/label.png">
                 <div>
@@ -120,15 +121,15 @@
             </div>
 
         </div> -->
-        <div class="container d-flex" id="about"> 
+        <div class="container d-flex mark-to-scroll" id="about"> 
             <div>
                 <img src="./imgs/about.png"> 
                 <div id="k" ></div>
                 <div></div>
             </div>
             <div>
-                <h2><a name="about"></a>О ЧЕМПИОНАТЕ</h2>
-                <article>
+                <h2 class="fadeInEvent"><a name="about"></a>О ЧЕМПИОНАТЕ</h2>
+                <article class="fadeInEvent">
                     <p>8 октября 2023 пройдет  уникальное  игровое событие: 
                         Чемпионат по киберспорту ПОКОЛЕНИЕ (GENERATION) - 2023</p>
                     <p>Мероприятие включает спортивные соревнования по дисциплинам 
@@ -163,13 +164,13 @@
         </div>
 
     </div>
-    <div id="video"  > <a name="video"></a>
-        <iframe width="560" height="315" 
+    <div id="video" class=" mark-to-scroll" > <a name="video"></a>
+        <!-- <iframe width="560" height="315" 
                 src="https://www.youtube.com/embed/hnd1OVNYg8k?si=dpGoGMI_q9rrihfQ" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
+                allowfullscreen></iframe> -->
     </div>
     <div class="bg-dark bg-glitch">
         <div class="parallax_lines">
@@ -180,15 +181,15 @@
         </div>
     </div>
 
-    <div id="dota">
+    <div id="dota" class=" mark-to-scroll">
         <div class="container d-flex">
             <a name="program"></a>
-            <article>
+            <article class="fadeInEvent">
                 Здесь будет размещена более подробная информация о сроках, порядке проведения отборочного и финального этапа соревнований по Dota2. 
                 Также здесь разместим ссылки на турнирные таблицы отборочного этапа каждой из категорий игроков (СГТУ, СГУ, Норникель  Спутник и Детский университет)
                 Можно еще указать, кто судьи
             </article>
-            <div class="circle_gradient promo-btn reg-dota" ><a href="#"><b>Регистрация</b></a></div> 
+            <div class="circle_gradient promo-btn reg-dota fadeInEvent" ><a href="#"><b>Регистрация</b></a></div> 
         </div>
     </div>
     <div class="bg-dark bg-glitch">
@@ -200,10 +201,10 @@
         </div>
     </div>
 
-    <div id="cs">
+    <div id="cs" class=" mark-to-scroll">
         <div class="container d-flex">
-            <div class="circle_gradient reg-cs" ><a href="#"><b>Регистрация</b></a></div> 
-            <article>
+            <div class="circle_gradient reg-cs fadeInEvent" ><a href="#"><b>Регистрация</b></a></div> 
+            <article class="fadeInEvent">
                 Здесь будет размещена более подробная информация о сроках, порядке проведения отборочного и финального этапа соревнований по CS:GO. 
                 Также здесь разместим ссылки на турнирные таблицы отборочного этапа каждой из категорий игроков (СГТУ, СГУ, Норникель  Спутник и Детский университет)
                 Можно еще указать, кто судьи.
@@ -222,13 +223,13 @@
             <div class="lines lines4"></div>
         </div>
 
-        <div class="container" id="event">
+        <div class="container mark-to-scroll" id="event">
             <div class="d-flex flex-column align-items-center">
-                <div>
+                <div class="fadeInEvent">
                     <h2>EVENT “ЧЕЛОВЕК ИГРАЮЩИЙ” <br>(Homo LUDENS)</h2>
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                    <div class="d-flex">
+                    <div class="d-flex fadeInEvent">
                         <div class="photo">
                             <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
                         </div>
@@ -239,7 +240,7 @@
                         </div>
                     </div>
     
-                    <div class="d-flex">
+                    <div class="d-flex fadeInEvent">
                         <div class="photo">
                             <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
                         </div>
@@ -250,7 +251,7 @@
                         </div>
                     </div>
     
-                    <div class="d-flex">
+                    <div class="d-flex fadeInEvent">
                         <div class="photo">
                             <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
                         </div>
@@ -277,7 +278,7 @@
             <div class="lines lines4"></div>
         </div>
 
-        <div class="x" id="results">
+        <div class="x mark-to-scroll" id="results">
             <a name="results"></a>
             <div class="glitch d-flex flex-column align-items-center">
                 <div>
@@ -338,7 +339,7 @@
         </div>
     </div>
 
-    <div class="partners bg-light">
+    <div class="partners bg-light mark-to-scroll">
     
        
         <div class="container pb-5">
@@ -351,7 +352,7 @@
 
         </div>
 
-        <div class="container pt-5 pb-5">
+        <div class="container pt-5 pb-5 mt-5" >
             <h1><a name="contacts"><b>КОНТАКТЫ</b></a></h1> 
             <div class="sponsors d-flex justify-content-between">
                 <div class="map">
@@ -371,23 +372,46 @@
    
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
-    <!-- <script >
+    <script >
         window.onload = function () {
             // parallax_lines
-            let parallax_lines_pos = document.querySelector(".parallax_lines").getBoundingClientRect().y;
-            var elementVisible = 10;
-            //let lines = document.getElementsByClassName("lines");
-            console.log (parallax_lines_pos)
-            for (line of lines) {
-                line.classList.add('scroll1');
+            /*let fadeInAll = document.querySelector(".fadeInEvent");
+            fadeInAll.forEach((el)=>{
+                let parallax_lines_pos = document.querySelector(".parallax_lines").getBoundingClientRect().y;
+                var elementVisible = 10;
+                //let lines = document.getElementsByClassName("lines");
+                console.log (parallax_lines_pos)
+                for (line of lines) {
+                    line.classList.add('scroll1');
+                }
+                setTimeout(()=>{
+
+                }, 2000);
+                
+                window.scrollTo(0, parallax_lines_pos);
+
+            })
+            */
+            function onEntryFade(entry) {
+                entry.forEach(change => {
+                  if (change.isIntersecting) {
+                    change.target.classList.add('element-show');
+                  }
+                });
             }
-            setTimeout(()=>{
 
-            }, 2000);
-            
-            window.scrollTo(0, parallax_lines_pos);
+            let options = { 
+                rootMargin: "0px",
+                threshold: 1
+            };
+            let observer = new IntersectionObserver(onEntryFade, options);
+            let elements = document.querySelectorAll('.fadeInEvent');
+            for (let elm of elements) {
+                observer.observe(elm);
+            }
 
+           
         }
-    </script> -->
+    </script>
 </body>
 </html>
