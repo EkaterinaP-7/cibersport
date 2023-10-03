@@ -600,13 +600,12 @@ h3 {font-size: 1.25rem;}
     font-weight: 600;
 }
 .one-sponsor{
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     background: url(../imgs/j.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 10px 30px;
 
 }
 
@@ -1021,6 +1020,20 @@ h1{
     #event section > *  {
         width: 100% ;
     }
+    #event section > *:last-child  {
+        margin-top: 5rem !important;
+        margin-left: 2rem;
+    }
+
+    .fadeInEvent {
+    
+        opacity: 1;
+        transition: all 0s;
+        transform: translateY(0%);
+    }
+    #about > div:first-child {
+        display: none;
+    }
 }
 @media screen and (max-width: 990px) {
     nav > div {display: none;}
@@ -1037,6 +1050,11 @@ h1{
     }
     .sponsors .map iframe {
         width: 100%;
+    }
+    .speaker .speaker-info {
+        width: 100%;
+        margin-left:auto;
+        margin-top: 1rem;
     }
 }
 @media screen and (max-width: 767px) {
@@ -1156,6 +1174,11 @@ h1{
         width: 100%;
     }
     
+    table {width: 95%;}
 }
 
 
+.sponsors {
+    flex-wrap: wrap;
+    grid-gap: 30px 30px;
+}
