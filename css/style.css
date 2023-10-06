@@ -1249,3 +1249,13 @@ nav {
 .setka:not(.setka:first-child) {
     margin-top: 10rem;
 }
+
+div#nn {
+    border: 1px solid #001f2f;
+}
+div#nn:before {
+    content: 'ОРГАНИЗАТОР';
+    position: relative;
+    top: -21px;
+    font-weight: 600;
+}
