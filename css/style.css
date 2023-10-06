@@ -15,7 +15,8 @@ html {
     /* font-family: 'Montserrat', sans-serif; */
     transition: 1s;
     --color-lavanda : #fe6001  ;
-    --color-bg-dark : #000  ; 
+    --color-bg-dark : #001f2f  ;
+    --color-bg-sdark : #000103  ; 
 } 
 body {
     font-family: 'Martian Mono', monospace;
@@ -34,7 +35,7 @@ nav {
     /* border-bottom: solid #A974FF 1px ; */
     display: flex;
     justify-content: space-between;
-    padding-top: 4rem;
+    padding-top: 1rem;
     color: white;
     /* color: #A974FF; */
 }
@@ -53,7 +54,7 @@ nav > div {
 }
 nav > div > * {
     margin-right: 2rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 nav > div > div:last-child {
     margin-right: 0;
@@ -237,6 +238,9 @@ h3 {font-size: 1.25rem;}
 .bg-dark {
     background-color: var(--color-bg-dark) !important;
 }
+.bg-super-dark {
+    background-color: var(--color-bg-sdark) !important;
+}
 
 .bg-bark-gradient{
     background: linear-gradient(0deg, #241D2E, #241D2E, #09040f);;
@@ -252,13 +256,13 @@ h3 {font-size: 1.25rem;}
 
 /*блок линий*/
 .parallax_lines{
-    height: 250px;
+    height: 120px;
     width: 100%;
     position: relative;
 }
 .lines{
     /* width: 100%; */
-    height: 250px;
+    height: 120px;
     position: absolute;
     top: 0;
     right: 0;
@@ -268,7 +272,7 @@ h3 {font-size: 1.25rem;}
 .lines1{
     background: url(../imgs/lines1.png);
     background-size: inherit;
-    background-position: center;
+    background-position: top;
     width: 3500px;
     animation: lines1;
     animation-duration: 18s;
@@ -282,7 +286,7 @@ h3 {font-size: 1.25rem;}
 .lines2{
     background: url(../imgs/lines2.png);
     background-size: inherit;
-    background-position: center;
+    background-position: top;
     width: 3000px;
     animation-direction: alternate-reverse;
     animation: lines2;
@@ -293,7 +297,7 @@ h3 {font-size: 1.25rem;}
 .lines3{
     background: url(../imgs/lines3.png);
     background-size: inherit;
-    background-position: center;
+    background-position: top;
     width: 3500px;
     animation: lines3;
     animation-duration: 30s;
@@ -304,7 +308,7 @@ h3 {font-size: 1.25rem;}
 .lines4{
     background: url(../imgs/lines4.png);
     background-size: inherit;
-    background-position: center;
+    background-position: top;
     width: 2900px;
     animation: lines4;
     animation-duration: 20s;
@@ -349,12 +353,11 @@ h3 {font-size: 1.25rem;}
 
 
 
-.fadeInEvent {
+/* .fadeInEvent {
     opacity: 0;
 }
 .fadeInEvent {
     
-    /* Скроем элемент в начальном состоянии */
     opacity: 0;
     transform: translateY(50%);
 }
@@ -362,7 +365,7 @@ h3 {font-size: 1.25rem;}
     opacity: 1;
     transition: all 1s;
     transform: translateY(0%);
-}
+} */
 
 
 
@@ -398,17 +401,23 @@ h3 {font-size: 1.25rem;}
     margin-left: 1rem;
     font-weight: 100;
 }
+#about {
+    padding-top: 200px;
+    margin-bottom: 200px;
+}
 
 #about > div:first-child {
     position: relative;
     margin-right: 5rem;
+    /* margin-top: 200px;
+    margin-bottom: 200px; */
 }
 
 #about > div {
     margin: auto;
     color: white;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    /* margin-top: 200px;
+    margin-bottom: 200px; */
     position: relative;
 }
 
@@ -446,7 +455,7 @@ h3 {font-size: 1.25rem;}
     margin-bottom: 4rem;
 }
 
-#about h2::before {
+/* #about h2::before {
     content: ' .';
     color: #241D2E00;
     background-image: url(../imgs/geometry.png);
@@ -458,13 +467,13 @@ h3 {font-size: 1.25rem;}
     top: -30px;
     left: -142px;
     
-}
+} */
 
 
 #priority{
     display: flex;
     justify-content: space-between;
-    margin-top: 10rem;
+    /* padding-top: 10rem; */
     margin-bottom: 5rem;
 }
 #priority > div {
@@ -517,7 +526,7 @@ h3 {font-size: 1.25rem;}
     height: 220px;
 }
 .bg-glitch400 {
-    height: 250px;
+    height: 100px;
 }
 
 
@@ -593,7 +602,7 @@ h3 {font-size: 1.25rem;}
 
 }
 .partners{
-    padding-top: 15rem;
+    padding-top: 8rem;
 }
 .partners h1{
     color: #09040f !important;
@@ -872,12 +881,11 @@ tr td:not(tr td:first-child) {
     background-color: #000;
     padding: 2rem;
     position: relative;
-    clip-path: polygon(7% 0%, 100% 0%, 113% 70%, -165% 455%);
     border: 1px solid white;
     color: white;
 
-    height: 16rem;
-    clip-path: polygon(4% 0%, 101% 0%, 115% 72%, -165% 456%);
+    /* height: 16rem; */
+    clip-path: polygon(4% 0%, 100% 0%, 100% 100%, -60% 313%);
     
 }
 
@@ -997,6 +1005,13 @@ h1{
 /* АДАПТИВНОСТЬ */
 
 @media screen and (max-width: 1200px) {
+    #baner {
+        background-position: left !important;
+        background-size: cover !important;
+        height: 100vh !important;
+    }
+
+
     #parallax_1 {
         display: none;
     }
@@ -1031,11 +1046,25 @@ h1{
         transition: all 0s;
         transform: translateY(0%);
     }
-    #about > div:first-child {
-        display: none;
+    #about {
+        flex-direction: column;
+    }
+    .navigation__info__panel {
+        width: 100% !important;
+        margin-top: 2rem !important;
     }
 }
+@media screen and (max-width: 1000px) {
+
+}
 @media screen and (max-width: 990px) {
+    #baner {
+        background-image: url(../imgs/Моб\ обложка.png) !important;
+        height: 100vh !important;
+        background-position: bottom !important;
+        background-size: cover !important;
+    }
+    
     nav > div {display: none;}
     .sponsors  {
         flex-direction: column-reverse;
@@ -1082,17 +1111,14 @@ h1{
         margin-bottom: 3rem;
     }
 
-    #about > div:first-child {
-        display: none;
+    #about > div {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     #about h2::before {
         top: -67px;
         right: 0;
         left: auto;
-    }
-    #about > div{
-        margin-top: 150px;
-        margin-bottom: 150px;
     }
     #video {
         height: 400px;
@@ -1181,4 +1207,45 @@ h1{
 .sponsors {
     flex-wrap: wrap;
     grid-gap: 30px 30px;
+}
+
+
+#baner {
+    background-image: url(../imgs/Обложка\ Вк.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: calc(100vw * 768 / 1920  - 7px);
+    margin: 0;
+}
+#baner > * {
+    width: 100%;
+}
+nav {
+    margin: 0 3rem;
+}
+
+.navigation__info__panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 150%;
+    text-align: center;
+    color: #008fc7 !important;
+    font-size: 12px;
+}
+.info__panel__item {
+    display: block;
+    height: 109px;
+    width: 160px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.setka{
+    width: 100%;
+}
+.setka:not(.setka:first-child) {
+    margin-top: 10rem;
 }

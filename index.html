@@ -23,8 +23,8 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div  class="bg-dark h" >
-        <div class="container mark-to-scroll">
+    <section id="baner">
+        <div class=" mark-to-scroll">
             <nav>
                 <img src="./imgs/label.png">
                 <div>
@@ -36,30 +36,60 @@
                     <div><div><a href="#">Регистрация</a></div></div>
                 </div>
             </nav>
-            <div id="baner">
-                <section>
-                    <!-- <h1>ЧЕМПИОНАТ <br>  
-                        ПО КОМПЬЮТЕРНОМУ СПОРТУ </h1>
-                    <h3>С 24 августа по 13 сентября</h3> -->
-                    <h3 class="brash-date mb-4 ">17 августа - 10 ноября 2023</h3>
-                    <article>
-                        Мероприятие включает спортивные соревнования по дисциплинам CS:GO и Dota2, а также специальный event, посвященный современным тенденциям в области компьютерного спорта и технологий геймификации.
-                        <br>В Чемпионате примут участие взрослая и подростковая сборные корпорации НОРНИКЕЛЬ Спутник, а также сборные двух саратовских вузов СГТУ имени Гагарина Ю.А. и СГУ имени Н.Г. Чернышевского
-                    </article>
-                    <img src="./imgs/КФ.png" class="mt-5" style="max-width: 90%;">
-                </section>
-                <div id="parallax_1">
-                    <div id="j"></div>
-                    <div id="jl1"></div>
-                    <div id="jl2"></div>
-                </div>
-                <div id="impotantINFO">
-                    <div id="iI1"><div>ТЕХНИЧЕСКИЕ ПРАВИЛА</div></div>
-                    <div id="iI2"><div>ПОЛОЖЕНИЕ</div></div>
-                    <div id="iI3"><div>РЕГЛАМЕНТ</div></div>
-                    <div id="iI4"><div>ПРОГРАММА</div></div>
-                </div>
+        </div>
+    </section>
+    <div  class="bg-dark h" >
+        <div class="">
+            <div class="parallax_lines">
+                <div class="lines lines1"></div>
+                <div class="lines lines2"></div>
+                <div class="lines lines3"></div>
+                <div class="lines lines4"></div>
             </div>
+        </div>
+        <div class="container d-flex mark-to-scroll" id="about"> 
+            <div>
+                <h2 class="fadeInEvent"><a name="about"></a>О ФЕСТИВАЛЕ</h2>
+                <article class="fadeInEvent">
+                    <p>Впервые три поколения киберспортсменов с разным жизненным опытом и философией спорта станут частью большого турнира, подарят свою игру зрителям в двух дисциплинах: Counter Strike 2 и Dota2. Чемпионат "Generation" - это не только спорт, это цивилизационный импульс двигаться вместе.
+                        <br>В Чемпионате примут участие взрослая и подростковая сборные компании Норникель Спутник, а также сборные двух саратовских вузов СГТУ имени Гагарина Ю.А. и СГУ имени Н.Г. Чернышевского</p>
+                    <!-- <div class="abc promo-btn fadeInEvent" ><b><a href="#video"><b>Турнирная сетка</b></a></b></div>  -->
+                        <!-- <div class="circle_gradient promo-btn" ><b><a href="#video"><b>Промо-ролик</b></a></b></div>  -->
+                   
+
+                </article>
+            </div>
+            <div class="navigation__info__panel">
+                <div class="d-flex align-items-center flex-column flex-wrap">
+                    <a class="info__panel__item" style="background-image: url(imgs/btn-news.png);" href="https://vk.com/@cybersaratov-obschaya-informaciya"></a>
+                    <div>О фестивале</div>
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <a class="info__panel__item" style="background-image: url(imgs/btn-news.png);" href=""></a>
+                    Регламент турниров
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <a class="info__panel__item" style="background-image: url(imgs/btn-setka.png);" href="https://vk.com/@cybersaratov-setki-turnirov"></a>
+                    Сетки
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <a class="info__panel__item" style="background-image: url(imgs/btn-photo.jpg);" href="https://vk.com/album-28850458_296969516"></a>
+                    Фото турниров
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <a class="info__panel__item" style="background-image: url(imgs/btn-strems.jpg);" href="https://vk.com/video/playlist/-28850458_2"></a>
+                    Стримы
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <a class="info__panel__item" style="background-image: url(imgs/btn-news.png);" href="https://vk.com/cybersaratov"></a>
+                    Участники <br>и партнеры
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="container mark-to-scroll">
             <div id="priority" class="">
                 <div>
                     <img src="./imgs/1.png">
@@ -86,267 +116,86 @@
             
             
         </div>
-        <div class="">
-            <div class="parallax_lines">
+        <!-- <div class=""> -->
+            <div class="parallax_lines" style="position: relative; top: 40px;">
                 <div class="lines lines1"></div>
                 <div class="lines lines2"></div>
                 <div class="lines lines3"></div>
                 <div class="lines lines4"></div>
             </div>
-        </div>
+        <!-- </div> -->
                 
         
     </div>
-    <div class="bg-dark" >  
-        <!-- <div id="registration" class="container d-flex">
-            <div>
-                <img src="./imgs/регистрация.png">
-            </div>
-            <div>
-                <form>
-                    <div>
-                        <label for="fio">ФИО</label><br>
-                        <input name="fio" id="fio" type="text">
+    
+    <div class="bg-light">
+        <div style="position: relative;">
+            <div id="h__event"></div>
+        </div>
+        <div class="container mark-to-scroll" id="event">
+            <div class="d-flex flex-column align-items-center">
+                <section class="d-flex justify-content-between">
+                    <div style="z-index: 3;">
+                        <h2>EVENT “ЧЕЛОВЕК ИГРАЮЩИЙ” <br>(Homo LUDENS)</h2>
                     </div>
-                    <div>
-                        <label for="phone">Телефон</label><br>
-                        <input name="phone" id="phone" type="tel">
+                    <article width="70%" class="fadeInEvent mt-4" style="color: black;">
+                        Чемпионат - это ещё дискуссионная площадка для  обмена мнениями на тему, кто такой Человек Играющий. Поэтому в программе мероприятия встречи с интересными людьми, представляющими разные направления киберспортивной и игровой индустрии
+                    </article>
+
+                </section>
+                
+                <div class="speaker">
+                    <div class="speaker-info">
+                        <p><b>Здесь скоро появится Программа. Это будет что-то!</b></p>
                     </div>
-                    <div>
-                        <label for="email">E-mail</label><br>
-                        <input name="email" id="email" type="mail">
+                </div>
+
+                <!-- <div class="d-flex flex-column align-items-center">
+
+                    <div class="d-flex fadeInEvent speaker">
+                        <div class="photo">
+                            <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
+                        </div>
+                        <div class="speaker-info">
+                            <p><b>Антон Сидоров</b></p>
+                            <div class="hatch"></div>
+                            <p class="mt-3">Специалист по 3D-моделированию</p>
+                        </div>
                     </div>
-                </form>
-            </div>
+                    <div class="d-flex fadeInEvent speaker">
+                        <div class="photo">
+                            <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
+                        </div>
+                        <div class="speaker-info">
+                            <p><b>Антон Сидоров</b></p>
+                            <div class="hatch"></div>
+                            <p class="mt-3">Специалист по 3D-моделированию</p>
+                        </div>
+                    </div>
+                    <div class="d-flex fadeInEvent speaker">
+                        <div class="photo">
+                            <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
+                        </div>
+                        <div class="speaker-info">
+                            <p><b>Антон Сидоров</b></p>
+                            <div class="hatch"></div>
+                            <p class="mt-3">Специалист по 3D-моделированию</p>
+                        </div>
+                    </div>
 
-        </div> -->
-        <div class="container d-flex mark-to-scroll" id="about"> 
-            <div>
-                <img src="./imgs/test-about.png"> 
-                <div id="k" ></div>
-                <div></div>
-            </div>
-            <div>
-                <h2 class="fadeInEvent"><a name="about"></a>О ЧЕМПИОНАТЕ</h2>
-                <article class="fadeInEvent">
-                    <p>8 октября 2023 пройдет  уникальное  игровое событие: 
-                        Чемпионат по киберспорту ПОКОЛЕНИЕ (GENERATION) - 2023</p>
-                    <p>Мероприятие включает спортивные соревнования по дисциплинам 
-                        CS:GO и Dota2, а также специальный event, посвященный современным 
-                        тенденциям  в области компьютерного спорта и технологий геимификации.</p>
-
-                    <p>В Чемпионате примут участие взрослая и подростковая  сборные корпорации  НОРНИКЕЛЬ Спутник, а также сборные двух саратовских вузов СГТУ имени Гагарина Ю.А.  и СГУ имени Чернышевского Н.Г.</p>
-
-                    <p>Цели Чемпионата:</p>
-                    <ol>
-                        <li>Развитие киберспорта как креативной индустрии  в Саратовской области;</li>
-                        <li>Организация активного досуга молодежи;</li>
-                        <li>Создание экосистемы саратовского киберспорта;</li>
-                        <li>Поодержка молодежного ИТ- сообщества региона.</li>
-                    </ol>
-
-                    <div class="abc promo-btn fadeInEvent" ><b><a href="#video"><b>Турнирная сетка</b></a></b></div> 
-                        <!-- <div class="circle_gradient promo-btn" ><b><a href="#video"><b>Промо-ролик</b></a></b></div>  -->
-                   
-
-                </article>
+                </div> -->
             </div>
 
             
         </div>
-        <!-- <div class="" id="glitch_mob_none">
-            <div class="parallax_lines">
-                <div class="lines lines1"></div>
-                <div class="lines lines2"></div>
-                <div class="lines lines3"></div>
-                <div class="lines lines4"></div>
-            </div>
-        </div> -->
-
     </div>
-    <!-- <div id="video" class=" mark-to-scroll" > <a name="video"></a>
-        <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/hnd1OVNYg8k?si=dpGoGMI_q9rrihfQ" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
-    </div>
-    <div class="bg-dark bg-glitch">
-        <div class="parallax_lines">
-            <div class="lines lines1"></div>
-            <div class="lines lines2"></div>
-            <div class="lines lines3"></div>
-            <div class="lines lines4"></div>
-        </div>
-    </div> -->
-
-    <!-- <div id="dota" class=" mark-to-scroll">
-        <div class="container d-flex">
-            <a name="program"></a>
-            <article class="fadeInEvent">
-                Здесь будет размещена более подробная информация о сроках, порядке проведения отборочного и финального этапа соревнований по Dota2. 
-                Также здесь разместим ссылки на турнирные таблицы отборочного этапа каждой из категорий игроков (СГТУ, СГУ, Норникель  Спутник и Детский университет)
-                Можно еще указать, кто судьи
-            </article>
-            <article >
-                <div class="content__info fadeInEvent">
-                    Здесь будет размещена более подробная информация о сроках, порядке проведения отборочного и финального этапа соревнований по Dota2. 
-                    Также здесь разместим ссылки на турнирные таблицы отборочного этапа каждой из категорий игроков (СГТУ, СГУ, Норникель  Спутник и Детский университет)
-                    Можно еще указать, кто судьи
-                </div>
-
-
-                
-            </article>
-            <div class="abc promo-btn reg-dota fadeInEvent" ><a href="#"><b>Регистрация</b></a></div> 
-        </div>
-    </div>
-    <div class="bg-dark bg-glitch">
-        <div class="parallax_lines">
-            <div class="lines lines1"></div>
-            <div class="lines lines2"></div>
-            <div class="lines lines3"></div>
-            <div class="lines lines4"></div>
-        </div>
-    </div> -->
-
-    <!-- <div id="cs" class=" mark-to-scroll">
-        <div class="container d-flex">
-            <div class="abc reg-cs fadeInEvent" ><a href="#"><b>Регистрация</b></a></div> 
-            <article >
-                <div class="content__info fadeInEvent">
-                    Здесь будет размещена более подробная информация о сроках, порядке проведения отборочного и финального этапа соревнований по CS:GO. 
-                    Также здесь разместим ссылки на турнирные таблицы отборочного этапа каждой из категорий игроков (СГТУ, СГУ, Норникель  Спутник и Детский университет)
-                    Можно еще указать, кто судьи.
-                </div>
-            </article>
-
-        </div>
-    </div> -->
-
 
     <div class="bg-dark" >
-        <div class="parallax_lines" id="glitch-upper">
-            <div class="lines lines1"></div>
-            <div class="lines lines2"></div>
-            <div class="lines lines3"></div>
-            <div class="lines lines4"></div>
-        </div>
-
-        <!-- <div class="container mark-to-scroll" id="event">
-            <div class="d-flex flex-column align-items-center">
-                <div class="fadeInEvent">
-                    <h2>EVENT “ЧЕЛОВЕК ИГРАЮЩИЙ” <br>(Homo LUDENS)</h2>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                    
-    
-                    <div class="d-flex fadeInEvent">
-                        <div class="photo">
-                            <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
-                        </div>
-                        <div class="mic"></div>
-                        <div class="discription">
-                            <p><b>Антон Сидоров</b></p>
-                            <p>Специалист по 3D-моделированию</p>
-                        </div>
-                    </div> 
-    
-                    <div class="d-flex fadeInEvent speaker">
-                        <div class="photo">
-                            <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
-                        </div>
-                        <div class="speaker-info">
-                            <p><b>Антон Сидоров</b></p>
-                            <div class="hatch"></div>
-                            <p class="mt-3">Специалист по 3D-моделированию</p>
-                        </div>
-                    </div>
-                    <div class="d-flex fadeInEvent speaker">
-                        <div class="photo">
-                            <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
-                        </div>
-                        <div class="speaker-info">
-                            <p><b>Антон Сидоров</b></p>
-                            <div class="hatch"></div>
-                            <p class="mt-3">Специалист по 3D-моделированию</p>
-                        </div>
-                    </div>
-                    <div class="d-flex fadeInEvent speaker">
-                        <div class="photo">
-                            <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
-                        </div>
-                        <div class="speaker-info">
-                            <p><b>Антон Сидоров</b></p>
-                            <div class="hatch"></div>
-                            <p class="mt-3">Специалист по 3D-моделированию</p>
-                        </div>
-                    </div>
-    
-                </div>
-            </div>
-    
-            
-        </div>
-         
-    </div> -->
-    <div style="position: relative;">
-        <div id="h__event"></div>
-    </div>
-    <div class="container mark-to-scroll" id="event">
-        <div class="d-flex flex-column align-items-center">
-            <section class="d-flex justify-content-between">
-                <div style="z-index: 3;">
-                    <h2>EVENT “ЧЕЛОВЕК ИГРАЮЩИЙ” <br>(Homo LUDENS)</h2>
-                </div>
-                <article width="70%" class="fadeInEvent mt-4">
-                    Чемпионат - это ещё дискуссионная площадка для  обмена мнениями на тему, кто такой Человек Играющий. Поэтому в программе мероприятия встречи с интересными людьми, представляющими разные направления киберспортивной и игровой индустрии
-                </article>
-
-            </section>
-            
-
-
-            <div class="d-flex flex-column align-items-center">
-
-                <div class="d-flex fadeInEvent speaker">
-                    <div class="photo">
-                        <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
-                    </div>
-                    <div class="speaker-info">
-                        <p><b>Антон Сидоров</b></p>
-                        <div class="hatch"></div>
-                        <p class="mt-3">Специалист по 3D-моделированию</p>
-                    </div>
-                </div>
-                <div class="d-flex fadeInEvent speaker">
-                    <div class="photo">
-                        <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
-                    </div>
-                    <div class="speaker-info">
-                        <p><b>Антон Сидоров</b></p>
-                        <div class="hatch"></div>
-                        <p class="mt-3">Специалист по 3D-моделированию</p>
-                    </div>
-                </div>
-                <div class="d-flex fadeInEvent speaker">
-                    <div class="photo">
-                        <img src="https://get.pxhere.com/photo/man-person-people-looking-male-guy-portrait-young-student-human-facial-expression-smile-face-one-cool-head-handsome-confident-portrait-photography-facial-hair-778280.jpg">
-                    </div>
-                    <div class="speaker-info">
-                        <p><b>Антон Сидоров</b></p>
-                        <div class="hatch"></div>
-                        <p class="mt-3">Специалист по 3D-моделированию</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        
 
         
-    </div>
-    <div class="bg-dark" >
+    
+    <div class="bg-super-dark" >
         <div class="parallax_lines" id="glitch-upper">
             <div class="lines lines1"></div>
             <div class="lines lines2"></div>
@@ -362,6 +211,11 @@
                     <h2>ИТОГИ</h2>
                 </div>
                 <div class="d-flex flex-column align-items-center ">
+                    <img class="setka" src="imgs/сетка/Сетка CSGO - макет группа 1 copy.png">
+                    <img class="setka" src="imgs/сетка/Сетка CSGO - макет группа 1 copy.png">
+                </div>
+
+                <!-- <div class="d-flex flex-column align-items-center ">
                     <div class="tbl-header d-flex justify-content-center ">
                         <table cellpadding="0" cellspacing="0" border="0">
                           <thead>
@@ -371,10 +225,7 @@
                               <th>Кол-во побед</th>
                             </tr>
                           </thead>
-                        <!-- </table>
-                      </div>
-                      <div class="tbl-content">
-                        <table cellpadding="0" cellspacing="0" border="0"> -->
+                          
                           <tbody>
                             <tr>
                               <td>1</td>
@@ -404,44 +255,8 @@
                           </tbody>
                         </table>
                       </div>
-                </div>
-                <!-- <div class="d-flex flex-column align-items-center table">
-                    <table>
-                        <thead>
-                          <tr>
-                            <th>Место</th>
-                            <th>Команда</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Мистериум</td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Ужас Аркхэма</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Взрывные котята</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Взрывные котята</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Взрывные котята</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Взрывные котята</td>
-                          </tr>
-                        </tbody>
-                      </table>
-    
                 </div> -->
+                
             </div>
     
             
@@ -473,15 +288,15 @@
         </div> -->
        
         <div class="container pb-5">
-            <h1><a name="sponsers"><b>Партнеры</b></a></h1> 
+            <!-- <h1><a name="sponsers"><b>Партнеры</b></a></h1>  -->
             <div class="sponsors d-flex justify-content-start">
                 <div class="one-sponsor" id="sstu" style="background-image: url(./imgs/sstu.png);"></div>
                 <div class="one-sponsor" id="ssu" style="background-image: url(./imgs/ssu.png);"></div>
-                <div class="one-sponsor" id="rosbank" style="background-image: url(./imgs/ros.jpg);"></div>
+                <div class="one-sponsor" id="rosbank" style="background-image: url(./imgs/ros.png);"></div>
                 <div class="one-sponsor" id="nn"  style="background-image: url(./imgs/nn.png);"></div>
                 <div class="one-sponsor" id="nn"  style="background-image: url(./imgs/nnsf.png);"></div>
                 <div class="one-sponsor" id="nn"  style="background-image: url(./imgs/rr.png);"></div>
-                <div class="one-sponsor" id="fcs"  style="background-image: url(./imgs/fcs.jpg);"></div>
+                <div class="one-sponsor" id="fcs"  style="background-image: url(./imgs/fcs.png);"></div>
             </div>
 
         </div>
@@ -499,16 +314,10 @@
             <article >
                 <div class="content__info d-flex">
                     <!-- <div class="d-flex"> -->
-                        <div class="me-5">
-                            <div class="mb-4"><b>Телефоны для связи</b></div>
-                            Организатор: <a href="tel:89087654321">8 (908) 765=43-21</a> <br>
-                            Партнер СГТУ: <a href="tel:89087654321">8 (908) 765=43-21</a> <br>
-                            Партнер СГУ: <a href="tel:89087654321">8 (908) 765=43-21</a>
-                        </div>
                         <div>
-                            Адрес проведения 1 этапа: г.Саратов, Политехническая, 77.<br>
-                            Адрес проведения 2 этапа: г.Саратов, Политехническая, 77.<br>
-                            Адрес проведения 3 этапа: г.Саратов, Политехническая, 77.
+                            <b>По вопросам турнира:</b>
+                            <a href="https://vk.com/safks">https://vk.com/safks</a><br>
+                            <b>телефон:</b> <a href="tel:89372253307">89372253307</a>
                         </div>
                     <!-- </div> -->
                 </div>
