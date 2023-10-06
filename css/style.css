@@ -892,7 +892,7 @@ tr td:not(tr td:first-child) {
 
 
 .speaker .speaker-info {
-    background-color: #33779d;
+    background-color: #33779d !important;
     /* var(--color-lavanda); */
     clip-path: polygon(6% 0%, 100% 0%, 113% 100%, -22% 100%);
     padding: 2rem;
