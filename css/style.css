@@ -1244,6 +1244,8 @@ nav {
     text-align: center;
     color: #008fc7 !important;
     font-size: 12px;
+    position: relative !important;
+    top: 5rem;
 }
 .info__panel__item {
     display: block;
