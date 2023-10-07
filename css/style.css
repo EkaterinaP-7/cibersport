@@ -1202,6 +1202,16 @@ h1{
     }
     
     table {width: 95%;}
+
+    #about {
+	    padding-top: 6rem;
+    }
+    #about > div:first-child {
+	    margin-right: 0;
+    }
+    #event > div > div:last-child {
+	    margin: 1rem;
+    }
 }
 
 
