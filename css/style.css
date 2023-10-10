@@ -609,7 +609,8 @@ h3 {font-size: 1.25rem;}
     font-weight: 600;
 }
 .one-sponsor{
-    width: 250px;
+    width: 14%;
+    /* width: 250px; */
     height: 150px;
     background: url(../imgs/j.png);
     background-size: contain;
@@ -1053,6 +1054,10 @@ h1{
         width: 100% !important;
         margin-top: 2rem !important;
     }
+
+    .one-sponsor {
+        width: 13%;
+    }
 }
 @media screen and (max-width: 1000px) {
 
@@ -1067,11 +1072,12 @@ h1{
     
     nav > div {display: none;}
     .sponsors  {
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
         align-items: center;
+        
     }
     .sponsors > div {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .sponsors .map {
@@ -1188,10 +1194,12 @@ h1{
     }
 
     .partners > div:first-child > div {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
     }
-
+    .sponsors {
+        grid-gap: 0px 15px !important;
+    }
     .content__info{
         height: auto !important;
         flex-wrap: wrap;
@@ -1223,11 +1231,15 @@ h1{
         height: 150px;
         width: 222px;
     }
+    .sponsors {
+        grid-gap: 0px 0px !important;
+    }
 }
 
 .sponsors {
     flex-wrap: wrap;
     grid-gap: 30px 30px;
+    justify-content: center !important;
 }
 
 
@@ -1274,11 +1286,13 @@ nav {
 }
 
 div#nn {
-    border: 1px solid #001f2f;
+    /* border: 1px solid #001f2f; */
+    width: 100%;
+    height: 360px;
 }
-div#nn:before {
+/* div#nn:before {
     content: 'ОРГАНИЗАТОР';
     position: relative;
     top: -21px;
     font-weight: 600;
-}
+} */
