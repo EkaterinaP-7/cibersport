@@ -609,7 +609,7 @@ h3 {font-size: 1.25rem;}
     font-weight: 600;
 }
 .one-sponsor{
-    width: 14%;
+    width: 11%;
     /* width: 250px; */
     height: 150px;
     background: url(../imgs/j.png);
@@ -1056,7 +1056,7 @@ h1{
     }
 
     .one-sponsor {
-        width: 13%;
+        width: 10%;
     }
 }
 @media screen and (max-width: 1000px) {
