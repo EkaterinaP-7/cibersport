@@ -1244,7 +1244,7 @@ h1{
 
 
 #baner {
-    background-image: url(../imgs/Обложка\ Вк.png);
+    background-image: url(../imgs/baner.jpg);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1296,3 +1296,14 @@ div#nn {
     top: -21px;
     font-weight: 600;
 } */
+#about-reg {
+    border: 1px solid;
+    padding: 1rem;
+    border-image: linear-gradient(to left, black, #0199d2) 1 0;
+    margin-top: 2rem;
+}
+
+#about-reg b {
+    color: #67b2d1;
+    font-weight: 600;
+}
